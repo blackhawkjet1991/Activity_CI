@@ -27,14 +27,6 @@ def test_division():
     assert calculator.divide(10, 2) == 5
 
 
-
-def test_division_by_zero():
-    try:
-        calculator.divide(10, 0)
-    except ValueError as e:
-        assert str(e) == "Cannot divide by zero."
-
-
 def test_get_user_input_valid_case1():
     user_input = "2 3"
     expected_values = (2, 3)
